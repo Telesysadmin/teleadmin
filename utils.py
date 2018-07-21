@@ -1,4 +1,6 @@
 from flask import Flask
+import json
+import codecs
 
 app = Flask(__name__)
 app.config.from_json("config.json")
@@ -19,4 +21,8 @@ class InvalidUsage(Exception):
     rv['message'] = self.message
     self.args = list(self.message)
     return rv
-
+#
+# with open("./config.json", 'r') as fh:
+#   print(fh.read())
+# r = codecs.open("config.json", encoding='KOI8-R')
+# print(r.read())

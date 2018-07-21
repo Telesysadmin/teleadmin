@@ -12,7 +12,8 @@ class VkServer(Server):
         "func": self.confirmation
       },
       "message_new": {
-        "func": self.message_new
+        "func": self.message_new,
+        "send_response": True
       }
     }
 
@@ -44,5 +45,5 @@ class VkServer(Server):
     except Exception as e:
       raise InvalidUsage("Failed parse data message_new")
     else:
-      self.parse_message(self.user_message_text)
+      response = self.do_message(self.user_message_text)
       return "ok"

@@ -1,0 +1,26 @@
+{
+  "SERVER_NAME": "domain.com",
+  "PORT": 443,
+  "API": {
+    "vk": {
+      "url": "https://api.vk.com/method/",
+      "access_token": "",
+      "secret_key": "",
+      "group_id": 11111,
+      "confirm": "",
+      "version": "5.80",
+      "peer_id": 1
+    }
+  },
+  "SSL": {
+    "cert": "./cert/cert1.pem",
+    "chain": "./cert/chain1.pem",
+    "fullchain": "./cert/fullchain1.pem",
+    "privkey": "./cert/privkey1.pem",
+    "client_cert": "./cert/vkapi.crt",
+    "client_key": "./cert/vkapi.key"
+  },
+  "actions": {
+
+  }
+}

@@ -1,0 +1,8 @@
+.idea
+.well-known
+config.json
+teleadmin_server.ini
+teleadmin_wsgi
+teleadmin_wsgi.c
+server_old.py
+__pycache__

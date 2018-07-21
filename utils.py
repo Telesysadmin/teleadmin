@@ -23,6 +23,7 @@ class InvalidUsage(Exception):
     return rv
 #
 # with open("./config.json", 'r') as fh:
-#   print(fh.read())
-# r = codecs.open("config.json", encoding='KOI8-R')
+#   config = json.loads(fh.read())
+#   print(config)
+# r = codecs.open("config.json", encoding='UTF-8')
 # print(r.read())
